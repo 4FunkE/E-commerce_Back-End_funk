@@ -132,7 +132,7 @@ router.delete('/:id', async (req, res) => {
     console.log('Deleted product.');
   } catch (err) {
     res.status(500).json(err);
-    console.log('Server error, delete unsuccessful...');
+    console.log('Server error, product delete unsuccessful...');
   }
 });
 
