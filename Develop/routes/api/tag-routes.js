@@ -62,8 +62,48 @@ router.post('/', async (req, res) => {
   }
 });
 
-router.put('/:id', (req, res) => {
-  // update a tag's name by its `id` value
+router.put('/:id', async (req, res) => {
+  try {
+    // Update tag's name by its `id` value
+    await Tag.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+
+    if (req.body.tagIds && req.body.tagIds.length) {
+      const productTags = await ProductTag.findAll({
+        where: { product_id: req.params.id },
+      });
+
+      const existingProductTagIds = productTags.map(({ tag_id }) => tag_id);
+      const newProductTags = req.body.tagIds
+        .filter((tag_id) => !existingProductTagIds.includes(tag_id))
+        .map((tag_id) => {
+          return {
+            product_id: req.params.id,
+            tag_id,
+          };
+        });
+      // figure out which ones to remove
+      const productTagsToRemove = productTags
+        .filter(({ tag_id }) => !req.body.tagIds.includes(tag_id))
+        .map(({ id }) => id);
+      // run both actions
+      await Promise.all([
+        ProductTag.destroy({ where: { id: productTagsToRemove } }),
+        ProductTag.bulkCreate(newProductTags),
+      ]);
+    }
+
+    const updatedTag = await Tag.findByPk(req.params.id);
+    res.json(updatedTag);
+    console.log('You updated a tag');
+  } catch (err) {
+    console.error(err);
+    res.status(400).json(err);
+    console.log('tag did not update');
+  }
 });
 
 router.delete('/:id', (req, res) => {
