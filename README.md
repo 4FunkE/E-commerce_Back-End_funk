@@ -2,12 +2,15 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+I embarked on the journey of building this E-commerce application with the objective of crafting a robust set of routes tailored for internet retailers. The motivation behind this project was to empower retail owners with a comprehensive platform that streamlines inventory management, thus enhancing the overall retail experience.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+Throughout the development process, I tackled the challenge of creating an E-commerce solution that seamlessly integrates essential functionalities. This encompassed creating well-defined routes that facilitate effortless operations such as retrieving, adding, updating, and removing items from the inventory.
+
+By implementing this project, I acquired valuable skills in constructing the backbone of a backend architecture. This involved mastering the art of crafting RESTful APIs and leveraging HTTP methods like GET, POST, PUT, and DELETE. As a result, I gained proficiency in data manipulation and honed my ability to provide effective solutions to real-world problems faced by retailers.
+
+This journey not only enabled me to build a functional E-commerce platform but also equipped me with the expertise to create scalable and adaptable backend systems. Through this experience, I've deepened my understanding of database interactions, request handling, and the importance of designing intuitive user experiences for retail professionals.
+
+In summary, this project stands as a testament to my dedication to software development and showcases my ability to architect comprehensive solutions that cater to the unique needs of internet retailers. It's been an incredible learning experience that has enriched my skill set and solidified my passion for creating impactful applications.
 
 ## Table of Contents
 
@@ -26,11 +29,11 @@ Provide a short description explaining the what, why, and how of your project. U
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+In order to install this application to your local device use the steps below:
 
 1. **Clone the Repository from GitHub:** Alternatively, you can download the ZIP folder from the repository's GitHub page.
 ```bash
-git clone https://github.com/4funke/Employees-of-funk.co.git
+git clone https://github.com/4funke/E-commerce_Back-End_funk.git
 ```
 2. **Open the Repository in a Source Code Editor:**
 Open your preferred source code editor (e.g., Visual Studio Code, Sublime Text) and navigate to the cloned repository's directory.
@@ -41,15 +44,30 @@ Open your preferred source code editor (e.g., Visual Studio Code, Sublime Text) 
 
 ## Usage Instruction: 
 #### Follow these steps to effectively utilize our application:
-Provide instructions and examples for use.
 
-1. Visit the deployed application's homepage and login or sign up for an account.
-2. Choose a teacher from the dropdown menu and rate them using the apple scale.
-3. Write a comment about the teacher's performance.
-4. Click the "Post" button to submit your comment and rating.
-5. To review your contributions, click on "Profile." Don't forget to log out when you're done!
+1. Navigate to the Repository: If you have already cloned the repository, navigate to the repository's directory using the following command:
+```bash
+cd E-commerce_Back-End_funk.co
+```
+2. Install Dependencies: Before running the application, install the necessary dependenciesby executing the following command:
+```bash
+npm install
+```
+3. Set Up Configuration: Set up any configuration files or environment variables that are required for your application. This might involve configuring your database connection, API keys, or other settings.
+4. Database Setup: Set up the database and run any seed data scripts as needed. Run commands like the following:
+```bash
+mysql -u your_username -p
+SOURCE db/schema.sql
+exit
+npm run seed
+```
+5. Start the Application: Once your configurations are in place, start the application using the following command:
+```bash
+npm start
+```
+6. Access the Application: The application should now be running locally. Access it by navigating to http://localhost:3001 in your preferred API testing tool, such as Insomnia.
 
-By following these steps, you'll be seamlessly...
+By following these steps, you'll be able to seamlessly interact with the application and leverage its features to manage your E-commerce operations.
 
 ## Walkthrough Video:
 [Walkthrough Video](https://drive.google.com/file/d/1-aT0zIgB_8ntHSX02-b2sLZ8LYU-dqJY/view)
@@ -66,33 +84,19 @@ This project was developed using the following technologies and tools:
 - [Node.js](https://nodejs.org/en/blog/release/v16.18.1/)
 - [Dotenv](https://www.npmjs.com/package/dotenv)
 - [Express](https://www.npmjs.com/package/express)
-- [Node MySql2](https://www.npmjs.com/package/mysql2)
-- [Inquirer](https://www.npmjs.com/package/inquirer/v/8.2.4)
+- [MySql2](https://www.npmjs.com/package/mysql2)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Bcrypt](https://www.npmjs.com/package/bcrypt)
 - [Sequelize](https://www.npmjs.com/package/connect-session-sequelize)
-- [Express Handlebars](https://www.npmjs.com/package/express-handlebars)
-- [Express-Session](https://www.npmjs.com/package/express-session)
 ### Technologies and Tools Overview
 - JSON: Used for data representation and exchange.
 - Node.js: The runtime environment for executing JavaScript code on the server.
 - Dotenv:  Enables the usage of environment variables to manage configuration.
 - Express: A fast and minimal web application framework for Node.js.
 - Node MySql2: A MySQL driver for Node.js.
-- Inquirer: Facilitates user interactions in the command-line interface.
 - Visual Studio Code: The integrated development environment used for coding.
-- Sequelize: Connect Session Store
-- Bcrypt:
-- Express Handlebars:
-- Express-session:
+- Sequelize: A powerful ORM (Object-Relational Mapping) library for Node.js, used for interacting with databases.
 
 ## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
 
 Collaborators: 
 - AskBCS Learning Assistants
@@ -104,31 +108,17 @@ Collaborators:
 
 This application is covered under the MIT license. [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
-
 ## Badges
 
 ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
 
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
 ## Features
-
-If your project has a lot of features, list them here. Communicate the capabilities of your project. Here's a guide you can use to structure your features section:
-
-- **Feature Name:** 
-  - Description: A brief description of what this feature accomplishes.
-  - Usage Instructions: How users can interact with this feature.
-  - Example (if applicable): A simple example of how the feature works.
-- **Feature Name:** 
-  - Description: A brief description of what this feature accomplishes.
-  - Usage Instructions: How users can interact with this feature.
-  - Example (if applicable): A simple example of how the feature works.
+- **Product Management:** 
+  - Description: This feature allows users to manage products, including adding, updating, and deleting them.
+  - Usage Instructions: Users with appropriate permissions can add new products by providing details such as name, price, and description. They can also edit existing products or remove them from the inventory.
+  - Example: A retail owner can add a new product by entering the product name, setting the price, and providing a description. They can also update product information or remove items that are no longer available.
 
 ## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
 We welcome contributions to enhance and improve our project. Whether you're interested in fixing a bug, implementing new features, or enhancing documentation, your contributions are highly appreciated.
 
@@ -137,7 +127,7 @@ To contribute to our project, follow these steps:
 1. Fork the Repository: Fork our repository to your own GitHub account by clicking the "Fork" button.
 2. Clone the Repository: Clone the forked repository to your local machine using:
 ```bash
-git clone https://github.com/4funke/Employees-of-funk.co.git 
+git clone https://github.com/4funke/E-commerce_Back-End_funk.git 
 ```
 3. Create a New Branch: Create a new branch to work on your contribution using:
 ```bash
@@ -162,18 +152,7 @@ If you're unsure about where to start or need assistance at any point, feel free
 
 ## Tests
 
-We have implemented a comprehensive testing suite to ensure the stability and functionality of our application. Our testing includes unit tests, integration tests, and end-to-end tests to cover various scenarios. To run the tests, follow these steps:
-
-1. Ensure you have all dependencies installed by running:
-```bash
-npm i 
-```
-2. Run the tests using the following command:
-```bash
-npm test 
-```
-
-Our testing suite provides confidence in the quality of our code and ensures that any changes made to the codebase don't introduce regressions.
+n/a
 
 ## Questions
 If you have any questions or need further assistance, feel free to reach out. You can contact me through my [GitHub profile](https://github.com/4FunkE) or via email at 4funkecodes@gmail.com. I'm here to help and support you in any way I can. Have a funke day!
