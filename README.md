@@ -52,13 +52,13 @@ Provide instructions and examples for use.
 By following these steps, you'll be seamlessly...
 
 ## Walkthrough Video:
-[Walkthrough Video](...)
+[Walkthrough Video](https://drive.google.com/file/d/1-aT0zIgB_8ntHSX02-b2sLZ8LYU-dqJY/view)
 
 ## GitHub Repository:
-[GitHub Repository](...)
+[GitHub Repository](https://github.com/4FunkE/E-commerce_Back-End_funk)
 
 ## Screenshot
-![image](./public/image/Student-mark-image.png)
+![image](./Develop/public/images/E-Commerce_insomnia.png)
 
 ## Built With:
 This project was developed using the following technologies and tools:
