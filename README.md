@@ -13,7 +13,7 @@ Provide a short description explaining the what, why, and how of your project. U
 
 - [Installation](#installation)
 - [Usage Instruction](#usage-instruction)
-- [Deployed Application Link](#deployed-application-link)
+- [Walkthrough Video:](#walkthrough-video)
 - [GitHub Repository](#github-repository)
 - [Screenshot](#screenshot)
 - [Built With](#built-with)
@@ -36,7 +36,7 @@ git clone https://github.com/4funke/Employees-of-funk.co.git
 Open your preferred source code editor (e.g., Visual Studio Code, Sublime Text) and navigate to the cloned repository's directory.
 
 ### Additional Resources
-- [Deployed Application Link](#deployed-application-link) Check out our live application
+- [Walkthrough Video:](#walkthrough-video) Check out a live demo of our application
 - [GitHub Repository](#github-repository) For more details and to explore the code
 
 ## Usage Instruction: 
@@ -51,8 +51,8 @@ Provide instructions and examples for use.
 
 By following these steps, you'll be seamlessly...
 
-## Deployed Application Link:
-[Deployed Application Link](...)
+## Walkthrough Video:
+[Walkthrough Video](...)
 
 ## GitHub Repository:
 [GitHub Repository](...)
